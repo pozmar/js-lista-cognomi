@@ -12,8 +12,8 @@ var posizioneUtente;
 for (var i = 0; i < cognomi.length; i++){
   cognomiOl.innerHTML += "<li>" + cognomi[i] + "</li>";
   if (inputSurname == cognomi[i]){
-    posizioneUtente = i;
+    posizioneUtente = i + 1;
   }
 }
 //output
-document.getElementById("utente").innerHTML += posizioneUtente + 1;
+document.getElementById("utente").innerHTML += posizioneUtente;
